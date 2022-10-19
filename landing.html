@@ -30,10 +30,14 @@
         }
         .btn-primary {
             border-radius: 0.3rem !important;
+            background-color: rgb(115, 127, 95);
+            border-width: 0.1rem;
+            border-color: transparent;
         }
         .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
             background-color: #1F2838 !important;
             box-shadow: none !important;
+            border-color: rgb(115, 127, 95) !important;
         }
         .section .row{
             margin-top: 7%;
@@ -60,6 +64,37 @@
         }
         .table thead tr, .table th, .table td{
             border: none !important
+        }
+        .home-phone-number {
+            padding: 80px 0;
+        }
+        .home-phone-number .single {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .home-phone-number .single h2 {
+            font-size: 22px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .home-phone-number .single .form-control {
+            height: 50px;
+            background: rgba(255, 255, 255, 0.6);
+            border-color: transparent;
+            border-radius: 20px 0 0 20px;
+        }
+        .home-phone-number .single .form-control:focus {
+            box-shadow: none;
+            border-color: rgb(115, 127, 95);
+        }
+        .home-phone-number .single .btn {
+            min-height: 50px; 
+            border-radius: 0 20px 20px 0;
+            color: #fff;
         }
     </style>
 </head>
@@ -102,14 +137,33 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-4">
-                            <a href="#" class="btn btn-dark btn-lg mt-4" style="background-color: rgb(115, 127, 95); border-color: transparent;">Записатися</a>
+                            <a href="#" class="btn btn-primary btn-lg mt-4">Записатися</a>
                         </div>
 
                     </div>
+
+                    <div class="container home-phone-number">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6">
+                                <div class="single">
+                                    <h2 class="text-dark">Або залиште свій номер і ми Вам передзвонимо</h2>
+                                    <form class="input-group">
+                                        <input type="phone" class="form-control" placeholder="Номер телефона">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-theme btn-primary" type="submit">Подзвоніть мені</button>
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    
 
      <div class="container section">
         <div class="row">
@@ -149,10 +203,10 @@
                 </div>
 
                 <div class="col-6 text-right">
-                    <a class="btn btn-primary mb-3 mr-1" style="background-color: rgb(115, 127, 95); border-color: transparent;" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                         <i class="fa fa-arrow-left"></i>
                     </a>
-                    <a class="btn btn-primary mb-3 " style="background-color: rgb(115, 127, 95); border-color: transparent;" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -319,7 +373,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+            </table>
         </div>
         
         <div

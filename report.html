@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Zvit</title>
+    <script>
+        function showText(number) {
+            document.getElementsByClassName("if-display 1")[0].style.display = "none";
+            document.getElementsByClassName("if-display 2")[0].style.display = "none";
+            document.getElementsByClassName("if-display 3")[0].style.display = "none";
+            document.getElementsByClassName("if-display 3-1")[0].style.display = "none";
+            document.getElementsByClassName("if-display 3-2")[0].style.display = "none";
+            document.getElementsByClassName("if-display 3-3")[0].style.display = "none";
+            document.getElementsByClassName("if-display 4")[0].style.display = "none";
+            document.getElementsByClassName("if-display " + number)[0].style.display = "block";
+        }
+    </script>
+    <style>
+        body {
+            background-color: rgb(115, 127, 95);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            padding: 3%;
+            position: relative;
+            overflow-y: scroll;
+        }
+        .nav-link.btn {
+            margin: 5px;
+        }
+        .mainBox {
+            padding: 5px;
+            font: 24px/36px sans-serif;
+            width: 1200px;
+            height: 500px;
+            overflow: scroll;
+        }
+        .if-display {
+            display: none;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="col text-center">
+        <h1>Звіти з лабораторних робіт</h1>
+        <h2>З дисципліни "Інтернет-технології та проєктування WEB-застосувань"</h2>
+        <h2 class="my-4">Студента групи ІС-12 Хмелевського Євгена</h2>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-secondary active" href="#main_report"><a href="report.html">Лабораторна робота №1</a></button>
+        <button class="btn btn-secondary" href="#report_lab2"><a href="report_lab2.html">Лабораторна робота №2</a></button>
+        <button class="btn btn-secondary" href="#report_lab3"><a href="report_lab3.html">Лабораторна робота №3</a></button>
+        <button class="btn btn-secondary" href="#report_lab4"><a href="report_lab4.html">Лабораторна робота №4</a></button>
+        <button class="btn btn-secondary" href="#report_lab5"><a href="report_lab5.html">Лабораторна робота №5</a></button>
+        <button class="btn btn-secondary" href="#report_lab6"><a href="report_lab6.html">Лабораторна робота №6</a></button>
+        <button class="btn btn-secondary" href="#report_lab7"><a href="report_lab7.html">Лабораторна робота №7</a></button>
+        <button class="btn btn-secondary" href="#report_lab8"><a href="report_lab8.html">Лабораторна робота №8</a></button>
+        <button class="btn btn-secondary" href="#report_lab9"><a href="report_lab9.html">Лабораторна робота №9</a></button>
+    </div>
+    
+    <table>
+        <th>
+            <nav id="navbar-example3" class="navbar navbar-light">
+                <nav class="nav nav-pills flex-column">
+                  <button class="nav-link btn btn-dark" href="#item-1" onclick="showText('1')">Опис предметного середовища</button>
+                  <button class="nav-link btn btn-dark" href="#item-2" onclick="showText('2')">Тема, мета місце розташування лаби №1</button>
+                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('3')">Структура документа</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-1" onclick="showText('3-1')">HTML-код таблиць</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-2" onclick="showText('3-2')">HTML-код форми</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-3" onclick="showText('3-3')">HTML-код зображення</button>
+                  <button class="nav-link btn btn-dark" href="#item-4" onclick="showText('4')">Висновки</button>
+                </nav>
+            </nav>
+        </th>
+        <th>
+            <div class="mainBox text-dark">
+                <!-- DISPLAY 1 -->
+                <div class="if-display 1">
+                    Галузь: Онлайн-послуги.<br>
+                    Тема: Сайт студії йоги.
+                    <h3>Функціонал:</h3>
+                    <ul>
+                        <li>перегляд опису студії;</li>
+                        <li>перегляд контактів та соціальних мереж студії;</li>
+                        <li>перегляд занять для онлайн тренувань;</li>
+                        <li>запис на практичні заняття;</li>
+                        <li>перегляд тренерів студії;</li>
+                        <li>перегляд основної інформації про йогу та її історію;</li>
+                    </ul>
+                    <h3>Основні сторінки веб-сайту:</h3>
+                    <ul>
+                        <li>головна сторінка з описом студії;</li>
+                        <li>сторінка для запису на практичні заняття вживу;</li>
+                        <li>сторінка з тренерами студії;</li>
+                        <li>сторінка з інформацією про йогу та її історію;</li>
+                        <li>контакти студії;</li>
+                        <li>сторінка з записами занять для онлайн тренувань на дому;</li>
+                    </ul>
+                </div>
+                <!-- DISPLAY 2 -->
+                <div class="if-display 2">
+                    <div>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.<br>
+                        Мета: придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+                    </div>
+                    Місце розташування: <a href="https://github.com/khmelevskyi/uni-web-tech-project">Github repository</a>
+                </div>
+                <!-- DISPLAY 3 -->
+                <div class="if-display 3">
+                    <p>HTML-документ містить:</p>
+                    <ul>
+                        <li>Head (тут підключено bootstrap)</li>
+                        <li>Навігаційна панель (список)</li>
+                        <li>Форму для залишення номера телефону на сайті</li>
+                        <li>Секція з каруселю</li>
+                        <li>Таблицю з посиланнями на соціальні мережі</li>
+                    </ul>
+                </div>
+                <!-- DISPLAY 3-1 -->
+                <div class="if-display 3-1">
+                    <div class="mb-5">
+                        <img class="col-10" src="images/table.png">
+                    </div>
+                    <pre>
+                        &lt;table class=&quot;table table-bordeless&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;col&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-facebook-f&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/th&gt;
+                                &lt;th scope=&quot;col&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/th&gt;
+                                &lt;th scope=&quot;col&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-google&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/th&gt;
+                                &lt;td&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/td&gt;
+                                &lt;td&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;text-dark mx-4&quot;&gt;
+                                        &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    </pre>
+                </div>
+                <!-- DISPLAY 3-2 -->
+                <div class="if-display 3-2">
+                    <div class="mb-5">
+                        <img class="col-10" src="images/form.png">
+                    </div>
+                    <pre>
+                        &lt;div class=&quot;container home-phone-number&quot;&gt;
+                            &lt;div class=&quot;row justify-content-center&quot;&gt;
+                                &lt;div class=&quot;col-sm-6&quot;&gt;
+                                    &lt;div class=&quot;single&quot;&gt;
+                                        &lt;h2 class=&quot;text-dark&quot;&gt;Або залиште свій номер і ми Вам передзвонимо&lt;/h2&gt;
+                                        &lt;form class=&quot;input-group&quot;&gt;
+                                            &lt;input type=&quot;phone&quot; class=&quot;form-control&quot; placeholder=&quot;Номер телефона&quot;&gt;
+                                            &lt;span class=&quot;input-group-btn&quot;&gt;
+                                                &lt;button class=&quot;btn btn-theme btn-primary&quot; type=&quot;submit&quot;&gt;Подзвоніть мені&lt;/button&gt;
+                                            &lt;/span&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </pre>
+                </div>
+                <!-- DISPLAY 3-3 -->
+                <div class="if-display 3-3">
+                    <div class="mb-5">
+                        <img class="col-10" src="images/image_with_text.png">
+                    </div>
+                    <pre>
+                        &lt;div class=&quot;container section&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-md-6 div-rounded&quot;&gt;
+                                    &lt;h3&gt;
+                                        Хороший зал
+                                    &lt;/h3&gt;
+                                    &lt;p&gt;
+                                        Дуже хороший зал для практичних занять йогою й не тільки
+                                    &lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;img class=&quot;div-rounded&quot; src=&quot;https://i.pinimg.com/originals/cf/b9/a1/cfb9a100fa0492effc86d3af26c41982.jpg&quot; alt=&quot;&quot;/&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-md-6 div-rounded&quot;&gt;
+                                    &lt;img class=&quot;div-rounded&quot; src=&quot;https://stylesatlife.com/wp-content/uploads/2021/06/Yoga-Asanas-That-Every-Beginner-Should-Know.jpg&quot; alt=&quot;&quot;/&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;h3&gt;
+                                        Крутий персонал
+                                    &lt;/h3&gt;
+                                    &lt;p&gt;
+                                    У нас тільки висококваліфіковані тренери, які допоможуть Вам з йогою
+                                    &lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </pre>
+                </div>
+                <!-- DISPLAY 4 -->
+                <div class="if-display 4">
+                    <p>Отже, під час виконання лабораторної роботи були придбані практичні навички роботи з HTML-документом, 
+                    таблицями, зображеннями, посиланнями, списками та формами. А також створено шаблон звітного HTML-документу 
+                    для відображення результатів роботи всіх лабораторних робіт і створено HTML-код основної сторінки мого проекту: 
+                    веб-сервісу створення та вивчення флеш-карток.</p>
+                </div>
+            </div>
+        </th>
+    </table>
+
+</body>
+</html>
