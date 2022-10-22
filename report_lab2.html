@@ -22,7 +22,7 @@
     </script>
     <style>
         body {
-            background-color: rgb(115, 127, 95);
+            background-color: #DDF3F8;
             background-size: 100% 100%;
             background-attachment: fixed;
             padding: 3%;
@@ -69,13 +69,16 @@
         <th>
             <nav id="navbar-example3" class="navbar navbar-light">
                 <nav class="nav nav-pills flex-column">
-                  <button class="nav-link btn btn-dark" href="#item-1" onclick="showText('1')">Опис предметного середовища</button>
-                  <button class="nav-link btn btn-dark" href="#item-2" onclick="showText('2')">Тема, мета місце розташування лаби №1</button>
-                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('3')">Структура документа</button>
-                    <button class="nav-link btn btn-secondary" href="#item-3-1" onclick="showText('3-1')">HTML-код таблиць</button>
-                    <button class="nav-link btn btn-secondary" href="#item-3-2" onclick="showText('3-2')">HTML-код форми</button>
-                    <button class="nav-link btn btn-secondary" href="#item-3-3" onclick="showText('3-3')">HTML-код зображення</button>
-                  <button class="nav-link btn btn-dark" href="#item-4" onclick="showText('4')">Висновки</button>
+                  <button class="nav-link btn btn-dark" href="#item-1" onclick="showText('1')">Постановка задачі ЛР 2</button>
+                  <button class="nav-link btn btn-dark" href="#item-2" onclick="showText('2')">Списки</button>
+                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('3')">Ідентифікатори</button>
+                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('4')">Відступи</button>
+                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('5')">Плаваючі елементи</button>
+                  <button class="nav-link btn btn-dark" href="#item-3" onclick="showText('6')">Селектори</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-1" onclick="showText('6-1')">Селектори тегу і класу</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-2" onclick="showText('6-2')">Інші селектори</button>
+                    <button class="nav-link btn btn-secondary" href="#item-3-3" onclick="showText('6-3')">Групування</button>
+                  <button class="nav-link btn btn-dark" href="#item-4" onclick="showText('7')">Висновки</button>
                 </nav>
             </nav>
         </th>
@@ -83,44 +86,89 @@
             <div class="mainBox text-dark">
                 <!-- DISPLAY 1 -->
                 <div class="if-display 1">
-                    Галузь: Онлайн-послуги.<br>
-                    Тема: Сайт студії йоги.
-                    <h3>Функціонал:</h3>
-                    <ul>
-                        <li>перегляд опису студії;</li>
-                        <li>перегляд контактів та соціальних мереж студії;</li>
-                        <li>перегляд занять для онлайн тренувань;</li>
-                        <li>запис на практичні заняття;</li>
-                        <li>перегляд тренерів студії;</li>
-                        <li>перегляд основної інформації про йогу та її історію;</li>
-                    </ul>
-                    <h3>Основні сторінки веб-сайту:</h3>
-                    <ul>
-                        <li>головна сторінка з описом студії;</li>
-                        <li>сторінка для запису на практичні заняття вживу;</li>
-                        <li>сторінка з тренерами студії;</li>
-                        <li>сторінка з інформацією про йогу та її історію;</li>
-                        <li>контакти студії;</li>
-                        <li>сторінка з записами занять для онлайн тренувань на дому;</li>
-                    </ul>
+                    Постановка задачі ЛР 2<br><br>
+                    <p>
+                        1. У програмному коді лабораторної работи №2 застосувати селектори тегу
+                        і класу на свій розсуд. Вміти пояснити викладачу. Програмний код
+                        даного пункту відобразити у звітному HTML-документі<br><br>
+                        2. У програмному коду лабораторної роботи №2 застосувати
+                        ідентифікатори. Вміти пояснити викладачу. Програмний код даного
+                        пункту відобразити у звітному HTML-документі.<br><br>
+                        3. На свій розсуд застосувати сусідні, дочірні селектори, селектор атрибута
+                        та універсальний селектор. Програмні коди даного пункту відобразити у
+                        звітному HTML-документі.<br><br>
+                        4. За допомогою каскадних таблиць стилів виконати на свій розсуд стильове
+                        оформлення текстових елементів. Показати як оформлюються:
+                        ⎯ списки,
+                        ⎯ різноманітні властивості кольору і фону,
+                        ⎯ зовнішні та внутрішні відступи,
+                        Програмні коди даного пункту відобразити у звітному HTML-документі.<br><br>
+                        5. У звітному HTML-документі оформити звіт лабораторної роботи №2
+                    </p>
                 </div>
                 <!-- DISPLAY 2 -->
                 <div class="if-display 2">
-                    <div>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.<br>
-                        Мета: придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
-                    </div>
-                    Місце розташування: <a href="https://github.com/khmelevskyi/uni-web-tech-project">Github repository</a>
+                    <div>Списки</div>
+                    <pre>
+                        &lt;ol class=&quot;light-list&quot;&gt;
+                            &lt;li&gt;Великий&lt;/li&gt;
+                            &lt;li&gt;Просторний&lt;/li&gt;
+                            &lt;li&gt;Затишний&lt;/li&gt;
+                            &lt;li&gt;
+                                З усіма необхідними інструментами:
+                                &lt;ul class=&quot;inside-light-list&quot;&gt;
+                                    &lt;li&gt;Каримати&lt;/li&gt;
+                                    &lt;li&gt;Підставки&lt;/li&gt;
+                                    &lt;li&gt;Мʼячики&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/li&gt;
+                        &lt;/ol&gt;
+                    </pre>
+                    та CSS код до них
+                    <code>
+                        .light-list {
+                            padding-left: 1.25rem;
+                            margin-top: 4%;
+                            color: #545b62;
+                        }
+                        
+                        .inside-light-list {
+                            padding-left: 1.25rem;
+                            color: #545b62;
+                        }
+                    </code> 
                 </div>
                 <!-- DISPLAY 3 -->
                 <div class="if-display 3">
-                    <p>HTML-документ містить:</p>
-                    <ul>
-                        <li>Head (тут підключено bootstrap)</li>
-                        <li>Навігаційна панель (список)</li>
-                        <li>Форму для залишення номера телефону на сайті</li>
-                        <li>Секція з каруселю</li>
-                        <li>Таблицю з посиланнями на соціальні мережі</li>
-                    </ul>
+                    <p>Ідентифікатори</p>
+                    <code>
+                        #landing {
+                            padding: 10%;
+                            background: #9ea69c;
+                            background-size: 100% 100%;
+                            font-family: 'Trebuchet MS', sans-serif;
+                            }
+                    </code>
+                    застосовується до цього div
+                    <pre>
+                        &lt;div class=&quot;jumbotron jumbotron-fluid form-row text-center&quot; id=&quot;landing&quot;&gt;...&lt;/div&gt;
+                    </pre>
+                </div>
+                <!-- DISPLAY 4 -->
+                <div class="if-display 4">
+                    <p>Відступи</p>
+                    <code>
+                        #landing {
+                            padding: 10%;
+                            background: #9ea69c;
+                            background-size: 100% 100%;
+                            font-family: 'Trebuchet MS', sans-serif;
+                            }
+                    </code>
+                    застосовується до цього div
+                    <pre>
+                        &lt;div class=&quot;jumbotron jumbotron-fluid form-row text-center&quot; id=&quot;landing&quot;&gt;...&lt;/div&gt;
+                    </pre>
                 </div>
                 <!-- DISPLAY 3-1 -->
                 <div class="if-display 3-1">

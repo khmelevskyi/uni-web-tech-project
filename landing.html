@@ -4,99 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>YOGA</title>
-    <style>
-        body {
-            background: #9ea69c;
-        }
-        #landing {
-          padding: 10%;
-          background: #9ea69c;
-          background-size: 100% 100%;
-          font-family: 'Trebuchet MS', sans-serif;
-        }
-        .navbar {
-            background: #b4bbb2 !important;
-        }
-        .centered-padding-div {
-          padding: 10%;
-          background: none !important;
-          background-size: 100% 100%;
-          font-family: 'Trebuchet MS', sans-serif;
-        }
-        .btn-primary {
-            border-radius: 0.3rem !important;
-            background-color: rgb(115, 127, 95);
-            border-width: 0.1rem;
-            border-color: transparent;
-        }
-        .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-            background-color: #1F2838 !important;
-            box-shadow: none !important;
-            border-color: rgb(115, 127, 95) !important;
-        }
-        .section .row{
-            margin-top: 7%;
-            margin-bottom: 10%;
-        }
-        .section .row .col-md-6{
-            margin-right: -2%;
-            padding: 5%;
-        }
-        .section p{
-            margin-top: 10%;
-            color: #545b62;
-        }
-        .section img
-        {
-            width: 100%;
-        }
-        .div-rounded {
-            border-radius: 0.3rem !important;
-        }
-        .card {
-            background-color: transparent;
-            border-color: transparent;
-        }
-        .table thead tr, .table th, .table td{
-            border: none !important
-        }
-        .home-phone-number {
-            padding: 80px 0;
-        }
-        .home-phone-number .single {
-            max-width: 650px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-        .home-phone-number .single h2 {
-            font-size: 22px;
-            color: white;
-            text-transform: uppercase;
-            margin-bottom: 40px;
-        }
-        .home-phone-number .single .form-control {
-            height: 50px;
-            background: rgba(255, 255, 255, 0.6);
-            border-color: transparent;
-            border-radius: 20px 0 0 20px;
-        }
-        .home-phone-number .single .form-control:focus {
-            box-shadow: none;
-            border-color: rgb(115, 127, 95);
-        }
-        .home-phone-number .single .btn {
-            min-height: 50px; 
-            border-radius: 0 20px 20px 0;
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -171,9 +84,19 @@
                 <h3>
                     Хороший зал
                 </h3>
-                <p>
-                    Дуже хороший зал для практичних занять йогою й не тільки
-                </p>
+                <ol class="light-list">
+                    <li>Великий</li>
+                    <li>Просторний</li>
+                    <li>Затишний</li>
+                    <li>
+                        З усіма необхідними інструментами:
+                        <ul class="inside-light-list">
+                            <li>Каримати</li>
+                            <li>Підставки</li>
+                            <li>Мʼячики</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
             <div class="col-md-6">
                 <img class="div-rounded" src="https://i.pinimg.com/originals/cf/b9/a1/cfb9a100fa0492effc86d3af26c41982.jpg" alt=""/>
@@ -187,9 +110,20 @@
                 <h3>
                     Крутий персонал
                 </h3>
-                <p>
-                   У нас тільки висококваліфіковані тренери, які допоможуть Вам з йогою
-                </p>
+                <ol class="light-list">
+                    <li>Кваліфіковані</li>
+                    <li>Досвідчені</li>
+                    <li>Веселі</li>
+                    <li>
+                        Допоможуть Вам у будь-якому Вашому питанні:
+                        <ul class="inside-light-list">
+                            <li>З чого розпочати</li>
+                            <li>Правильне харчування</li>
+                            <li>Які вправи потрібні Вам</li>
+                            <li>Інше</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
@@ -277,7 +211,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
-                            <a href="#" class="btn btn-dark btn-lg mt-4" style="background-color: rgb(115, 127, 95); border-color: transparent;">Дивитися</a>
+                            <a href="#" class="btn btn-primary btn-lg mt-4">Дивитися</a>
                         </div>
                     </div>
                 </div>
@@ -376,15 +310,7 @@
             </table>
         </div>
         
-        <div
-             class="text-center p-3"
-             style="background-color: rgba(0, 0, 0, 0.2)"
-             >
-          © 2022 Copyright:
-          <a class="text-dark" href="#"
-             >Yoga.com</a
-            >
-        </div>
+        <div class="light-darken text-center p-3">© 2022 Copyright:<a class="text-dark" href="#">Yoga.com</a></div>
       </footer>
     
 </body>
