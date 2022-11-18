@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+ul {
+  list-style: none; 
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+nav {
+  display: block;
+  text-align: center;
+}
+.one ul {
+  padding: 1em 0;
+  background: #ffffff;
+ 
+}
+.one a {
+  padding: 1em;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+.one a:hover {background: #b19891;}
+.one li {
+  display: inline;
+}
+
+/**/
+#react .program_hours__counter::before{
+    color: #f0f0f0;
+    -webkit-text-stroke-color: #f0f0f0;
+}
+#react .program_hours__counter::after{
+    color: #282828;
+}
+.item-list-owu{
+    color: #EDF4FB;
+}
+/**/
+#top_screen {
+    display: grid;
+    padding-left: 100px;
+    grid-template-columns: 1fr .75fr;
+    grid-template-rows: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+.top_screen__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.top_screen__left h1 {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FF9638;
+    position: relative;
+    z-index: 1;
+}
+
+.top_screen__left h2 {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 36px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+.top_screen__left p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 55px;
+    text-align: justify;
+}
+
+.top_screen__right {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #3298f2;
+    grid-row-gap: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.top_screen__right img {
+    position: absolute;
+    bottom: 0;
+    left: -23.5%;
+}
+
+.top_screen__item p {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #292929;
+    letter-spacing: 1px;
+}
+
+.top_screen__slogan {
+    position: relative;
+    line-height: 26px;
+    color: #000000;
+    border: 2px dashed #3298F2;
+    border-radius: 12px;
+    padding: 50px 20px;
+    width: 50%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_screen__bg {
+    font-weight: 900;
+    font-size: 288px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    position: absolute;
+    top: 170px;
+    left: -51px;
+}
+
+.top_screen__bg span {
+    color: #FFD43D;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.top_screen__number {
+    border-color: #FFC188;
+    color: #3298f2;
+    background-color: #F7F7F7;
+}
+
+.top_screen__item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_screen__item p {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #F4F4F4;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1600px) {
+    .top_screen__item p {
+        font-size: 14px;
+    }
+
+    .top_screen__bg {
+        /* top: 90px; */
+        font-size: 225px;
+    }
+
+    .top_screen__left h1::before {
+        font-size: 110px;
+    }
+
+    .top_screen__right img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .top_screen__right img {
+        left: -32%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .top_screen__right {
+        padding-right: 40px;
+    }
+
+    .top_screen__left h1::before {
+        font-size: 90px;
+    }
+
+    #top_screen {
+        padding-left: 25px;
+    }
+
+    .top_screen__bg {
+        font-size: 195px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #top_screen {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 0 30px;
+    }
+
+    .top_screen__left {
+        justify-content: flex-end;
+    }
+
+    .top_screen__right {
+        align-items: center;
+        background: none;
+        flex-direction: row;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .top_screen__right img {
+        display: none;
+    }
+
+    .top_screen__item p {
+        color: #000000;
+    }
+
+    .top_screen__slogan {
+        padding: 60px 15px;
+        margin: 100px auto 0;
+    }
+
+    .top_screen__left h2 {
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #top_screen {
+        background-color: #FF9638;
+        padding-top: 70px;
+        height: 100vh;
+        grid-template-rows: auto;
+    }
+
+    .top_screen__left {
+        justify-content: center;
+    }
+
+    .top_screen__left h1 span {
+        color: #000000;
+        font-size: 22px;
+    }
+
+    .top_screen__left h1::before {
+        content: none;
+    }
+
+    .top_screen__left h1 {
+        font-size: 42px;
+        line-height: 38px;
+        color: #ffffff;
+    }
+
+    .top_screen__left h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .top_screen__right {
+        display: none;
+    }
+
+    .top_screen__bg {
+        font-size: 100px;
+        top: -6px;
+        color: #F9F9F9;
+        opacity: 0.1;
+    }
+
+    .top_screen__slogan {
+        width: 100%;
+    }
+
+    .slogan_item span {
+        color: #fff;
+    }
+
+    .top_screen__icon {
+        display: block;
+        position: absolute;
+        top: -45px;
+        left: 37px;
+    }
+
+    .slogan_label {
+        display: none;
+    }
+}

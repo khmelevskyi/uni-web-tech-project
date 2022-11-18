@@ -1,0 +1,39 @@
+#fixed_block{
+    width: 1000px;
+    height: 750px;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+
+#head{
+    width: 1000px;
+    height: 150px;
+    background-color: rgb(241, 216, 184);
+}
+
+#center_col{
+    width: 1000px;
+    height: 450px;
+    text-align: center;
+}
+
+#footer{
+    width: 1000px;
+    height: 150px;
+    background-color: rgb(241, 216, 184);
+    font-size: 13px;
+}
+
+#left_col{
+    width: 250px;
+    height: 600px;
+    background-color: rgb(217, 151, 233);
+    float: left;
+}
+
+#upper_col{
+    width: 800px;
+    height: 150px;
+    background-color: brown;
+   
+}

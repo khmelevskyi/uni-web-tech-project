@@ -1,0 +1,34 @@
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+.left_col{
+   width: 120px;
+    height: 460px;
+    background-color:blue;
+    padding: 15px;
+    vertical-align: top;
+
+}
+.center_col{
+   width: 500px;
+    background-color: beige;
+    padding: 15px;
+    vertical-align: top;
+}
+.right_col{
+    width: 120px;
+    background-color:blue;
+    padding: 15px;
+    vertical-align: top;
+}
+.footer{
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    background-color: orange;
+    font-size: 13px;
+}
